@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import NoteService from '../service/NoteService'
 
+import './notes.css';
+
 export default class Notes extends Component {
     
     state = {
@@ -33,7 +35,7 @@ export default class Notes extends Component {
             <div>
                 <h1> Notes App: </h1>
                 <button className="btn btn-primary" onClick = {this.addButton}>Add Task</button>
-                <table className = "table table-striped table-hover m-2">
+                <table className = "table table-hover m-2 notes">
                     <thead className = "thead-dark">
                         <tr>
                             <td>Note</td>
@@ -45,7 +47,7 @@ export default class Notes extends Component {
                         {
                             this.state.notes.map((note) => {
                                 return (
-                                    <tr key = {note.id}>
+                                    <tr key = {note.id} className = "notes__items">
                                         <td>{note.note}</td>
                                         <td>{note.createdAt}</td>
                                         <td>
