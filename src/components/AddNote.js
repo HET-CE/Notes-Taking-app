@@ -51,7 +51,7 @@ class AddNote extends Component {
     render() {
         return (
             <div>
-                <div className="container">
+                <div className="container" style={{height: "100vh"}}>
                     <div className="row">
                         <div className="card col-md-6 offset-md-3" style={{marginTop: "20px"}}>
                             <h3 className=" text-center">{ this.state.id == -1 ? "Add Note": "Update Note" }</h3>

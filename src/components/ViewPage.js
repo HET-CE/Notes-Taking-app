@@ -21,8 +21,8 @@ export default class ViewPage extends Component {
     render() {
         return (
             <div>
-                <div className="card col-md-6 offset-md-3"  style={{background: "transparent"}}>
-                    <h3 className="text-center">View Task Details</h3>
+                <div className="col-md-6 offset-md-3"  style={{background: "transparent", height: "100vh"}}>
+                    <h3 className="text-center" style={{paddingTop: "20px"}}>View Task Details</h3>
                     <hr />
                     <div className="card-body">
                         <div className="row">
