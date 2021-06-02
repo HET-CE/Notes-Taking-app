@@ -33,7 +33,7 @@ export default class Notes extends Component {
     render() {
         return (
             <div>
-                <h1> Notes App: </h1>
+                <h1 style={{color:"white"}}> Notes App: </h1>
                 <button className="btn btn-primary" onClick = {this.addButton}>Add Task</button>
                 <table className = "table table-hover m-2 notes">
                     <thead className = "thead-dark">
@@ -47,7 +47,7 @@ export default class Notes extends Component {
                         {
                             this.state.notes.map((note) => {
                                 return (
-                                    <tr key = {note.id} className = "notes__items">
+                                    <tr key = {note.id}>
                                         <td>{note.note}</td>
                                         <td>{note.createdAt}</td>
                                         <td>
